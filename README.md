@@ -43,10 +43,6 @@ The goal of this project is to demonstrate how AI can be used to support hiring 
 ## 📸 Demo
 
 <img width="1627" height="983" alt="image" src="https://github.com/user-attachments/assets/f12af72a-fc4f-4bd9-9d07-47456f4df1bc" />
-<img width="1627" height="983" alt="image" src="https://github.com/user-attachments/assets/f12af72a-fc4f-4bd9-9d07-47456f4df1bc" />
-
-<img width="1627" height="983" alt="Screenshot 2026-01-10 012849" src="https://github.com/user-attachments/assets/ee4b31bd-0971-41fa-9766-5bee54f64a6b" />
-<img width="1627" height="983" alt="Screenshot 2026-01-10 012849" src="https://github.com/user-attachments/assets/ee4b31bd-0971-41fa-9766-5bee54f64a6b" />
 
 ---
 
