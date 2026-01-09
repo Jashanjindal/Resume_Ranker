@@ -1,57 +1,149 @@
-# AI Resume Ranker
+# Resume Ranker
 
-AI Resume Ranker is a full-stack machine learning application that analyzes how well a resume matches a given job description. It uses natural language processing and semantic similarity to compute a match score, extract relevant skills, identify skill gaps, and suggest what the candidate should learn to better fit the role.
+AI-powered Resume Ranker is a full-stack machine learning application that evaluates how well a resume matches a job description. It calculates a match score, extracts technical skills, identifies missing skills, and provides personalized learning recommendations — all in an interactive web interface.
 
-The goal of this project is to demonstrate how AI can be used to support hiring decisions and help candidates understand where they stand and how to improve.
+Built by **Jashan Jindal** as a practical demonstration of NLP, embeddings, and full-stack AI engineering.
 
 ---
 
-## 🚀 Features
+## 🎯 Features
 
-- Upload resume as PDF
-- Paste job description text
-- Compute semantic match score (0–100)
-- Extract technical skills from both resume and job description
-- Identify matched and missing skills
-- Provide personalized learning recommendations
-- Clean and interactive web UI
+- Upload resume in PDF format  
+- Paste a job description  
+- Compute semantic match score (0–100)  
+- Extract matched skills  
+- Identify missing skills  
+- Provide learning recommendations  
 
 ---
 
 ## 🧠 How It Works
 
-1. Resume PDF is parsed into raw text.
-2. A pretrained sentence embedding model converts resume and job description into vectors.
-3. Cosine similarity is used to compute a semantic match score.
-4. A hybrid skill extractor (keyword + semantic fallback) detects technical skills.
-5. Missing skills are mapped to learning recommendations.
+1. Resume PDF is parsed into text.  
+2. A pretrained sentence embedding model converts resume and job description into vectors.  
+3. Cosine similarity is used to compute a semantic match score.  
+4. A hybrid keyword + semantic approach extracts technical skills.  
+5. Missing skills are mapped to personalized learning recommendations.
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Language:** Python
-- **Backend:** FastAPI
-- **Frontend:** Streamlit
-- **ML/NLP:** Sentence Transformers (MiniLM), scikit-learn
-- **PDF Parsing:** pdfplumber
-- **Similarity:** Cosine similarity
-- **Deployment:** Local / Streamlit Cloud / Render (optional)
+| Layer | Technology |
+|------|------------|
+| Language | Python |
+| Backend | FastAPI |
+| Frontend | Streamlit |
+| NLP | Sentence Transformers (MiniLM) |
+| Similarity | Cosine Similarity |
+| PDF Parsing | pdfplumber |
 
 ---
 
-## 📸 Demo
+## 📁 Project Structure
+Resume_Ranker/
+├── backend/
+│ ├── main.py
+│ ├── model.py
+│ ├── parser.py
+│ ├── skills.py
+│ └── recommendations.py
+├── frontend/
+│ └── app.py
+├── requirements.txt
+└── README.md
 
-<img width="1627" height="983" alt="image" src="https://github.com/user-attachments/assets/f12af72a-fc4f-4bd9-9d07-47456f4df1bc" />
 
 ---
 
-## ⚙️ Installation
+
+## 🚀 Installation
+
+### Clone the repository
 
 ```bash
-
 git clone https://github.com/Jashanjindal/Resume_Ranker.git
-cd ai-resume-ranker
+cd Resume_Ranker
+```
+
+### (Optional but recommended) Create virtual environment
+
+```bash
 python -m venv venv
-venv\Scripts\activate
+source venv/bin/activate      # macOS/Linux
+venv\Scripts\activate         # Windows
+```
+
+### Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
+
+---
+
+## ▶ Run Locally
+
+### Start Backend (FastAPI)
+
+```bash
+cd backend
+uvicorn main:app --reload
+```
+
+Backend runs at:
+http://127.0.0.1:8000/docs
+
+---
+
+### Start Frontend (Streamlit)
+
+Open a **new terminal**:
+
+```bash
+cd frontend
+streamlit run app.py
+```
+
+---
+
+## 🧪 Example
+
+**Input:**
+```
+Machine Learning Engineer with Python, SQL, and NLP
+```
+
+**Output:**
+```
+Match Score: 74 / 100
+Matched Skills: Python, ML
+Missing Skills: SQL, NLP
+```
+<img width="1160" height="928" alt="image" src="https://github.com/user-attachments/assets/c986ee12-4bd1-47bd-aae7-0ff6e998f549" />
+
+---
+
+## 💡 Why This Project?
+
+This project demonstrates:
+
+- Practical NLP using embeddings
+- End-to-end ML product development
+- API + frontend integration
+## 📌 Future Improvements
+
+- User accounts and history tracking  
+- Visual analytics dashboard  
+- Cloud deployment  
+- Model fine-tuning with user feedback  
+
+---
+
+## 👤 Author
+
+**Jashan Jindal**  
+AIML Student  
+
+- GitHub: https://github.com/Jashanjindal
+  
