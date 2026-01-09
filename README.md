@@ -49,7 +49,8 @@ The goal of this project is to demonstrate how AI can be used to support hiring 
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/your-username/ai-resume-ranker.git
+
+git clone https://github.com/Jashanjindal/Resume_Ranker.git
 cd ai-resume-ranker
 python -m venv venv
 venv\Scripts\activate
